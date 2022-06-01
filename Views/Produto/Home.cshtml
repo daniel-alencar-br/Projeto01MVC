@@ -1,0 +1,39 @@
+﻿@model Projeto01MVC.Models.FazerPedido
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Bem vindo a loja de games Marquinho Fiote</h2>
+
+<p> Somos a maior rede de lojas especializada em games do pais. Fundada há 5 anos, com 
+    mais de 70 lojas, distribuidas por 4 regiões. Comercializamos games, consoles, acessorios
+    e produtos de informatica em geral.</p>
+
+<div>
+
+    <div>
+        Nossos Produtos são:
+
+        <ul>
+            <li>Controle PS5</li>
+            <li>Console PS5</li>
+            <li>God of War collection</li>
+            <li>Castlevania: Lords of Shadow</li>
+            <li>Call of duty Black Ops 2</li>
+        </ul>
+
+        <p>Caso tenha gostado de algo faça seu pedido:</p>
+
+        @Html.ActionLink("Faça Pedido","FazerPedido", "Produto")
+    </div>
+
+    <div>
+        Localizalição:
+        <p>Av. Tamo La, 709</p>
+    </div>
+    <div>
+        Telefone:
+        <p>(11) 9799-1010</p>
+    </div>
+</div>
+

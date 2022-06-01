@@ -1,0 +1,47 @@
+﻿@model Projeto01MVC.Models.FazerPedido
+@{
+    ViewBag.Title = "FazerPedido";
+}
+
+<div>
+    <h2>Faça seu Pedido</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+
+        @Html.LabelFor(m => m.ID)
+        <br />
+        @Html.TextBoxFor(m => m.ID)
+        <br />
+        @Html.ValidationMessageFor(m => m.ID)
+        <br />
+        <br />
+        @Html.LabelFor(m => m.Produto)
+        <br />
+        @Html.DropDownList("Produto",String.Empty)
+        <br />
+        @Html.ValidationMessageFor(m => m.Produto)
+        <br />
+        <br />
+        @Html.LabelFor(m => m.Quantidade)
+        <br />
+        @Html.TextBoxFor(m => m.Quantidade)
+        <br />
+        @Html.ValidationMessageFor(m => m.Quantidade)
+        <br />
+        <br />
+        @Html.LabelFor(m => m.PedidoData)
+        <br />
+        @Html.TextBoxFor(m => m.PedidoData)
+        <br />
+        @Html.ValidationMessageFor(m => m.PedidoData)
+        <br />
+        <br />
+        //para onde ele vai enviar ?
+       
+        <input type="submit" value="Enviar" />
+    }
+</div>
+
+
+

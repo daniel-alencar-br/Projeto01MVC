@@ -1,0 +1,19 @@
+﻿@model Projeto01MVC.Models.FazerPedido 
+@{
+    ViewBag.Title = "MostrarPedido";
+}
+
+<h2>MostrarPedido</h2>
+
+<div>
+Dados do Pedido ---
+    <br />
+    Pedido Numero: @Model.ID
+    <br />
+     Produto Nome:  @Model.Produto
+    <br />
+     Quantidade:    @Model.Quantidade
+     <br />
+     Data Pedido:  @Model.PedidoData
+</div>
+
